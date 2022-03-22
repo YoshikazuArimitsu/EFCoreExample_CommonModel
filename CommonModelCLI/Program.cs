@@ -15,7 +15,7 @@ namespace CommonModelCLI
                 {
                     services.AddDbContext<CommonDbContext>(options =>
                     {
-                        options.UseSqlServer(@"(localdb)\MSSQLLocalDB;Database=SampleDB;Trusted_Connection=True;");
+                        options.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Database=SampleDB;Trusted_Connection=True;");
                     });
                     services.AddSingleton<MyService>();
                 });
